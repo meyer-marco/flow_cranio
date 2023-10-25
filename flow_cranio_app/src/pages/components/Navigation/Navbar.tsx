@@ -13,9 +13,11 @@ export const Navbar: React.FC<{}> = () => {
           Flow Cranio
         </span>
       </NavbarWrapper.Brand>
-      <div className={`flex md:order-2 flex-0 text-main-violet ${style.menu}`}>
+      <div
+        className={`flex md:order-2 flex-0 text-main-violet z-10 ${style.menu}`}
+      >
         <Dropdown
-          className="text-main-violet"
+          className="text-main-violet "
           arrowIcon={false}
           inline
           label={<Menu className="text-main-violet" />}
