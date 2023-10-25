@@ -8,9 +8,11 @@ export const Navbar: React.FC<{}> = () => {
     <NavbarWrapper>
       <NavbarWrapper.Brand href="/">
         <Logo height={90} width={90} />
-        <span className="text-3xl font-bold text-main-violet">Flow Cranio</span>
+        <span className="md:text-3xl text-xl font-bold text-main-violet">
+          Flow Cranio
+        </span>
       </NavbarWrapper.Brand>
-      <div className="flex md:order-2">
+      <div className="flex md:order-2 ">
         <Dropdown arrowIcon={false} inline label={<Menu />}>
           {/*           <Dropdown.Header>
             <span className="block text-sm">Bonnie Green</span>
