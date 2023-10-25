@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const MyComponent = () => {
+const Layout = () => {
   useEffect(() => {
     const init = async () => {
       const { Datepicker, Input, initTE } = await import("tw-elements");
@@ -30,4 +30,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default Layout;
