@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Navbar from "../Navigation/Navbar";
 import style from "./layout.module.css";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../Logo/Logo";
 import { Menu } from "react-feather";
-import { Navbar as NavbarWrapper, Dropdown, Avatar } from "flowbite-react";
+import { Navbar as NavbarWrapper, Dropdown } from "flowbite-react";
 import style from "./navbar.module.css";
 
 interface ChildProps {
