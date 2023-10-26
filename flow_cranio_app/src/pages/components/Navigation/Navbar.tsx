@@ -5,12 +5,12 @@ import { Navbar as NavbarWrapper, Dropdown, Avatar } from "flowbite-react";
 import style from "./navbar.module.css";
 
 interface ChildProps {
-  onDataReceive: (data: string) => void;
+  onNavItemCkick: (data: string) => void;
 }
 
-const Navbar: React.FC<ChildProps> = ({ onDataReceive }) => {
+const Navbar: React.FC<ChildProps> = ({ onNavItemCkick }) => {
   const sendDataToParent = (data: string) => {
-    onDataReceive(data);
+    onNavItemCkick(data);
   };
 
   return (

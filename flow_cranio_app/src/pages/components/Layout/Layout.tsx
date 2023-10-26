@@ -3,8 +3,6 @@ import Navbar from "../Navigation/Navbar";
 import style from "./layout.module.css";
 
 const Layout = () => {
-  const [receivedData, setReceivedData] = useState("");
-
   const handleClickScroll = (value: string) => {
     const element = document.getElementById(value);
     if (element) {
@@ -18,14 +16,13 @@ const Layout = () => {
 
   //TODO: note into obsdian how to pass data between child and parent component, note sticky nav stuff
 
-  const onDataReceive = (data: string) => {
-    setReceivedData(data);
+  const onNavItemCkick = (data: string) => {
     handleClickScroll(data);
   };
 
   return (
     <div className="bg-main-background ">
-      <Navbar onDataReceive={onDataReceive} />
+      <Navbar onNavItemCkick={onNavItemCkick} />
 
       <div className={` bg-main-background px-10 ${style.distance_to_nav}`}>
         {/*  <div className="py-20"></div> */}
