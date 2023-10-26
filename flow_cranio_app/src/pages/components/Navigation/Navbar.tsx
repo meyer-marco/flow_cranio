@@ -14,7 +14,10 @@ const Navbar: React.FC<ChildProps> = ({ onDataReceive }) => {
   };
 
   return (
-    <NavbarWrapper className="bg-main-background px-4 fixed w-full top-0 left-0">
+    <NavbarWrapper
+      id="navBar"
+      className="bg-main-background px-4 fixed w-full top-0 left-0"
+    >
       <NavbarWrapper.Brand href="/">
         <Logo height={90} width={90} />
         <span className="md:text-3xl text-xl font-bold text-main-violet">

@@ -1,17 +1,22 @@
 import { useState } from "react";
 import Navbar from "../Navigation/Navbar";
+import style from "./layout.module.css";
 
 const Layout = () => {
   const [receivedData, setReceivedData] = useState("");
 
   const handleClickScroll = (value: string) => {
     const element = document.getElementById(value);
+    const navBarHeigth = document
+      .getElementById("navBar")
+      ?.getBoundingClientRect().height;
+    console.log(navBarHeigth);
+
     if (element) {
       // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
-        inline: "start",
       });
     }
   };
@@ -27,10 +32,11 @@ const Layout = () => {
     <div className="bg-main-background ">
       <Navbar onDataReceive={onDataReceive} />
 
-      <div className=" bg-main-background px-10 snap-x">
-        <div className="py-20"></div>
+      <div className={` bg-main-background px-10 ${style.distance_to_nav}`}>
+        {/*  <div className="py-20"></div> */}
 
-        <div id="section-1" className="scroll-mt-64">
+        <div id="section-1" className="mt-0 scroll-mt-60">
+          <br />
           ##section-1 <br />
           <br />
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -88,8 +94,10 @@ const Layout = () => {
           et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
           takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
           amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo
+          <br />
+          <br />
         </div>
-        <div id="section-2">
+        <div id="section-2" className="scroll-mt-0">
           #section-2 <br />
           <br />
           Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
@@ -122,8 +130,10 @@ const Layout = () => {
           dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
           nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
           ea commodo
+          <br />
+          <br />
         </div>
-        <div id="section-3">
+        <div id="section-3" className="scroll-mt-0">
           #section-3 <br />
           <br />
           Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
@@ -156,6 +166,7 @@ const Layout = () => {
           dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
           nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
           ea commodo
+          <br />
         </div>
       </div>
     </div>
