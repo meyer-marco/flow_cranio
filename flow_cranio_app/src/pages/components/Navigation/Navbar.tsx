@@ -9,14 +9,14 @@ interface ChildProps {
 }
 
 const Navbar: React.FC<ChildProps> = ({ onNavItemCkick }) => {
-  const sendDataToParent = (data: string) => {
+  const setScrollToSection = (data: string) => {
     onNavItemCkick(data);
   };
 
   return (
     <NavbarWrapper
       id="navBar"
-      className={`bg-main-background px-4 fixed w-full top-0 left-0  ${style.nav_container}`}
+      className={`bg-main-background px-4 fixed w-full top-0 left-0 z-20 ${style.nav_container}`}
     >
       <NavbarWrapper.Brand href="/">
         <Logo height={90} width={90} />
@@ -43,24 +43,24 @@ const Navbar: React.FC<ChildProps> = ({ onNavItemCkick }) => {
           </Dropdown.Header> */}
           <Dropdown.Item
             onClick={() => {
-              sendDataToParent("section-1");
+              setScrollToSection("section-1");
             }}
           >
             Über mich
           </Dropdown.Item>
           <Dropdown.Item
             onClick={() => {
-              sendDataToParent("section-2");
-            }}
-          >
-            Termine
-          </Dropdown.Item>
-          <Dropdown.Item
-            onClick={() => {
-              sendDataToParent("section-3");
+              setScrollToSection("section-2");
             }}
           >
             Was ist Cranio?
+          </Dropdown.Item>
+          <Dropdown.Item
+            onClick={() => {
+              setScrollToSection("section-3");
+            }}
+          >
+            Termine
           </Dropdown.Item>
         </Dropdown>
       </div>
