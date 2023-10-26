@@ -7,11 +7,6 @@ const Layout = () => {
 
   const handleClickScroll = (value: string) => {
     const element = document.getElementById(value);
-    const navBarHeigth = document
-      .getElementById("navBar")
-      ?.getBoundingClientRect().height;
-    console.log(navBarHeigth);
-
     if (element) {
       // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({
@@ -97,7 +92,7 @@ const Layout = () => {
           <br />
           <br />
         </div>
-        <div id="section-2" className="scroll-mt-0">
+        <div id="section-2" className="scroll-mt-28">
           #section-2 <br />
           <br />
           Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
@@ -133,7 +128,7 @@ const Layout = () => {
           <br />
           <br />
         </div>
-        <div id="section-3" className="scroll-mt-0">
+        <div id="section-3" className="scroll-mt-28">
           #section-3 <br />
           <br />
           Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
