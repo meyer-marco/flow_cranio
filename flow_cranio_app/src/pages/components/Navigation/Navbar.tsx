@@ -30,10 +30,10 @@ const Navbar: React.FC<ChildProps> = ({ onNavItemCkick }) => {
         className={`flex md:order-2 flex-0 text-main-violet z-10 ${style.menu}`}
       >
         <Dropdown
-          className="text-main-violet "
+          className="text-main-violet bg-second-background"
           arrowIcon={false}
           inline
-          label={<Menu className="text-main-violet" />}
+          label={<Menu className="text-main-violet " />}
         >
           {/*           <Dropdown.Header>
             <span className="block text-sm">Bonnie Green</span>
