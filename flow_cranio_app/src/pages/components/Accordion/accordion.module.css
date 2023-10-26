@@ -1,6 +1,6 @@
 .accordion {
 }
-.accordion button {
+/* .accordion button {
   border-color: #9c2c54;
 }
 .accordion button:focus {
@@ -14,4 +14,4 @@
 .accordion button .focus\:ring-gray-200:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: none;
-}
+} */

@@ -1,6 +1,9 @@
+import Image from "next/image";
 import Accordion from "../Accordion/Accordion";
 import Navbar from "../Navigation/Navbar";
 import style from "./layout.module.css";
+import waves from "../../../../public/images/wave.png";
+import Wave from "../Wave/Wave";
 
 const Layout = () => {
   const handleClickScroll = (value: string) => {
@@ -25,9 +28,16 @@ const Layout = () => {
       <Navbar onNavItemCkick={onNavItemCkick} />
 
       <div className={` bg-main-background px-10 ${style.distance_to_nav}`}>
-        {/*  <div className="py-20"></div> */}
+        <div className="">
+          <Wave />
+          <div
+            className={`flex justify-center font-bold md:text-4xl md:mt-8 mt-2 ${style.text_gradient} `}
+          >
+            Körper, Geist und Seele in Balance
+          </div>
+        </div>
 
-        <div id="section-1" className="mt-0 scroll-mt-60">
+        <div id="section-1" className="mt-4 pb-24 scroll-mt-60">
           <br />
           ##section-1 <br />
           <br />

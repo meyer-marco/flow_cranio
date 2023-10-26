@@ -14,7 +14,7 @@ const config: Config = {
       colors: {
         "main-violet": "#9c2c54",
         "main-background": "#fbf3e3",
-        "second-backgroud": "#ecd4c5",
+        "second-background": "#FFFAF0",
       },
     },
   },

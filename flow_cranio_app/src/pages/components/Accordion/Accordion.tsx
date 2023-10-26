@@ -6,14 +6,14 @@ import type { CustomFlowbiteTheme, ThemeProps } from "flowbite-react";
 const customTheme: CustomFlowbiteTheme = {
   accordion: {
     root: {
-      base: "divide-y divide-main-violet border-main-violet ",
+      base: " ",
       flush: {
         off: "rounded-lg border",
         on: "border-b",
       },
     },
     content: {
-      base: "py-5 px-5 last:rounded-b-lg first:rounded-t-lg bg-[#FFFAF0]",
+      base: "py-5 px-10 last:rounded-b-lg first:rounded-t-lg bg-second-background",
     },
     title: {
       arrow: {
@@ -31,7 +31,7 @@ const customTheme: CustomFlowbiteTheme = {
       heading: "",
       open: {
         off: "",
-        on: "text-main-violet bg-[#ecd4c5]",
+        on: "text-main-violet ",
       },
     },
   },
@@ -50,64 +50,56 @@ const Accordion: React.FC<{ id?: string }> = ({ id }) => {
           <AccordionWrapper.Content className="">
             <div className="mb-2 text-main-violet">
               <p>
-                Flowbite is an open-source library of interactive components
-                built on top of Tailwind CSS including buttons, dropdowns,
-                modals, navbars, and more.
-              </p>
-            </div>
-            <div className=" text-main-violet">
-              <p>Check out this guide to learn how to </p>
-              <p>
-                and start developing websites even faster with components on top
-                of Tailwind CSS.
-              </p>
-            </div>
-          </AccordionWrapper.Content>
-        </AccordionWrapper.Panel>
-        <AccordionWrapper.Panel>
-          <AccordionWrapper.Title className=" text-main-violet">
-            Is there a Figma file available?
-          </AccordionWrapper.Title>
-          <AccordionWrapper.Content>
-            <div className="mb-2  text-main-violet">
-              <p>
-                Flowbite is first conceptualized and designed using the Figma
-                software so everything you see in the library has a design
-                equivalent in our Figma file.
-              </p>
-            </div>
-            <div className=" text-main-violet">
-              <p>Check out the</p>
-              <p>
-                based on the utility classes from Tailwind CSS and components
-                from Flowbite.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat, vel illum dolore eu feugiat nulla
+                facilisis at vero eros et accumsan et iusto odio dignissim qui
+                blandit praesent luptatum zzril delenit augue duis dolore te
+                feugait nulla facilisi. Nam liber tempor cum soluta nobis
+                eleifend option congue nihil imperdiet doming id quod mazim
+                placerat facer possim assum. Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat.
               </p>
             </div>
           </AccordionWrapper.Content>
         </AccordionWrapper.Panel>
         <AccordionWrapper.Panel>
           <AccordionWrapper.Title className=" text-main-violet">
-            What are the differences between Flowbite and Tailwind UI?
+            Für Kinder & Säuglinge
+          </AccordionWrapper.Title>
+          <AccordionWrapper.Content>
+            <div className="mb-2  text-main-violet">
+              <p>
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat, vel illum dolore eu feugiat nulla
+                facilisis at vero eros et accumsan et iusto odio dignissim qui
+                blandit praesent luptatum zzril delenit augue duis dolore te
+                feugait nulla facilisi. Nam liber tempor cum soluta nobis
+                eleifend option congue nihil imperdiet doming id quod mazim
+                placerat facer possim assum. Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              </p>
+            </div>
+          </AccordionWrapper.Content>
+        </AccordionWrapper.Panel>
+        <AccordionWrapper.Panel>
+          <AccordionWrapper.Title className=" text-main-violet">
+            Wobei kann Cranio Saracl unterstüzen?
           </AccordionWrapper.Title>
           <AccordionWrapper.Content>
             <div className="mb-2 text-main-violet">
               <p>
-                The main difference is that the core components from Flowbite
-                are open source under the MIT license, whereas Tailwind UI is a
-                paid product. Another difference is that Flowbite relies on
-                smaller and standalone components, whereas Tailwind UI offers
-                sections of pages.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat, vel illum dolore eu feugiat nulla
+                facilisis at vero eros et accumsan et iusto odio dignissim qui
+                blandit praesent luptatum zzril delenit augue duis dolore te
+                feugait nulla facilisi. Nam liber tempor cum soluta nobis
+                eleifend option congue nihil imperdiet doming id quod mazim
+                placerat facer possim assum. Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat.
               </p>
-            </div>
-            <div className="mb-2 text-main-violet">
-              <p>
-                However, we actually recommend using both Flowbite, Flowbite
-                Pro, and even Tailwind UI as there is no technical reason
-                stopping you from using the best of two worlds.
-              </p>
-            </div>
-            <div className="mb-2  text-main-violet">
-              <p>Learn more about these technologies:</p>
             </div>
           </AccordionWrapper.Content>
         </AccordionWrapper.Panel>
