@@ -3,6 +3,15 @@
 .accordion button {
   border-color: #9c2c54;
 }
+.accordion button:focus {
+  border-color: #9c2c54;
+}
 .accordion div {
   border-color: #9c2c54;
+}
+.focus\:ring-4:focus {
+}
+.accordion button .focus\:ring-gray-200:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: none;
 }
