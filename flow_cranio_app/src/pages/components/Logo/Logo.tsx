@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-export const Logo = (props: SVGProps<SVGSVGElement>) => (
+const Logo = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" {...props}>
     <defs>
       <linearGradient
@@ -27,3 +27,4 @@ export const Logo = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
+export default Logo;

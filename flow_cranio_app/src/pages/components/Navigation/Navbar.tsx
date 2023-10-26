@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "../Logo/Logo";
+import Logo from "../Logo/Logo";
 import { Menu } from "react-feather";
 import { Navbar as NavbarWrapper, Dropdown, Avatar } from "flowbite-react";
 import style from "./navbar.module.css";
@@ -8,7 +8,7 @@ interface ChildProps {
   onDataReceive: (data: string) => void;
 }
 
-export const Navbar: React.FC<ChildProps> = ({ onDataReceive }) => {
+const Navbar: React.FC<ChildProps> = ({ onDataReceive }) => {
   const sendDataToParent = (data: string) => {
     onDataReceive(data);
   };
@@ -62,3 +62,4 @@ export const Navbar: React.FC<ChildProps> = ({ onDataReceive }) => {
     </NavbarWrapper>
   );
 };
+export default Navbar;

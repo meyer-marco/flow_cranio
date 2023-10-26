@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navbar } from "../Navigation/Navbar";
+import Navbar from "../Navigation/Navbar";
 
 const Layout = () => {
   const [receivedData, setReceivedData] = useState("");
