@@ -16,7 +16,7 @@ const Navbar: React.FC<ChildProps> = ({ onNavItemCkick }) => {
   return (
     <NavbarWrapper
       id="navBar"
-      className="bg-main-background px-4 fixed w-full top-0 left-0"
+      className={`bg-main-background px-4 fixed w-full top-0 left-0  ${style.nav_container}`}
     >
       <NavbarWrapper.Brand href="/">
         <Logo height={90} width={90} />
