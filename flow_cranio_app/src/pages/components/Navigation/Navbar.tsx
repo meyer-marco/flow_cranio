@@ -20,7 +20,9 @@ const Navbar: React.FC<ChildProps> = ({ onDataReceive }) => {
     >
       <NavbarWrapper.Brand href="/">
         <Logo height={90} width={90} />
-        <span className="md:text-3xl text-xl font-bold text-main-violet">
+        <span
+          className={`md:text-3xl text-xl font-bold ${style.headline_text}`}
+        >
           Flow Cranio
         </span>
       </NavbarWrapper.Brand>
