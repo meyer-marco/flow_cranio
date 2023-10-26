@@ -10,11 +10,13 @@ const Layout = () => {
       // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "start",
         inline: "start",
       });
     }
   };
+
+  //TODO: note into obsdian how to pass data between child and parent component, note sticky nav stuff
 
   const onDataReceive = (data: string) => {
     setReceivedData(data);
@@ -23,9 +25,8 @@ const Layout = () => {
 
   return (
     <div className="bg-main-background ">
-      <div className="mb-2">
-        <Navbar onDataReceive={onDataReceive} />
-      </div>
+      <Navbar onDataReceive={onDataReceive} />
+
       <div className=" bg-main-background px-10 snap-x">
         <div className="py-20"></div>
 
